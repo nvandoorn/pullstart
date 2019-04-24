@@ -1,9 +1,9 @@
 # lift life
 # http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/makefile.4
 CC=gcc
-CFLAGS=-I. -pthread -Wall
-DEPS=
-OBJ=
+CFLAGS=-I. -I./segfault-suite -pthread -Wall
+DEPS=segfault-suite/test-lib.h
+OBJ=segfault-suite/test-lib.o
 MAIN_OBJ=main.o
 TEST_OBJ=core.test.o
 
